@@ -1,0 +1,50 @@
+.header-div {
+    background-color: aliceblue;
+}
+
+.hero-div {
+    background-image: url(img/Untitled\ design.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.card-courses {
+    height: 40rem;
+}
+
+.about {
+    background-image: url(img/Graduate\ Degree\ Cap\ on\ Books.jpg);
+    background-size: cover;
+}
+
+.about-p {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+}
+
+.contactUs {
+    background-image: url(img/Phone\ Blue\ Contact\ Us.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.contact-box {
+    background-color: rgba(212, 212, 212, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+}
+
+.card-lectures {
+    height: 35rem;
+}
