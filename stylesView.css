@@ -1,0 +1,45 @@
+/* Custom styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container-fluid {
+    padding: 20px;
+}
+
+.student-profile {
+    border: 1px solid #dee2e6;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f8f9fa;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-header img {
+    max-width: 150px;
+    border-radius: 50%;
+    border: 3px solid #007bff;
+}
+
+.profile-header h5 {
+    margin-top: 15px;
+    font-size: 1.5rem;
+}
+
+.profile-details p {
+    font-size: 1.2rem;
+}
+
+.profile-actions {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.profile-actions .btn {
+    margin: 0 5px;
+}

@@ -12,5 +12,5 @@ function register() {
 }
 
 function login() {
-    window.location.href = "";
+    window.location.href = "signIn.html";
 }

@@ -4,200 +4,202 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>University Student Registration Form</title>
-    <link href="styles(regi).css" rel="stylesheet">
+    <link href="stylesRegister.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <form id="registrationForm" action="submit_registration.php" method="post" enctype="multipart/form-data" class="needs-validation" novalidate>
-        <h2 class="my-4">University Student Registration Form</h2>
+    <div class="container p-0">
+        <header class="d-flex justify-content-center py-3">
+          <ul class="nav nav-pills">
+            <li class="nav-item"><a href="index.html" class="nav-link active" aria-current="page">Home</a></li>
+          </ul>
+        </header>
+    </div>
 
-        <!-- Personal Information -->
-        <div class="section-title mb-3">Personal Information</div>
+    <div class="container main">
+        <div class="mt-3 mb-3">
+            <form id="registrationForm" class="needs-validation" novalidate>
+                <h2 class="my-2">Student Registration Form</h2>
 
-        <div class="row mb-3">
-            <div class="col-md-6">
-                <label for="first_name" class="form-label">First Name:</label>
-                <input type="text" class="form-control" id="first_name" name="first_name" required>
-                <div class="invalid-feedback">Please provide your first name.</div>
-            </div>
-            <div class="col-md-6">
-                <label for="last_name" class="form-label">Last Name:</label>
-                <input type="text" class="form-control" id="last_name" name="last_name" required>
-                <div class="invalid-feedback">Please provide your last name.</div>
-            </div>
-        </div>
+                <!-- Personal Information -->
+                <div class="section-title mb-3">Personal Information</div>
 
-        <div class="row mb-3">
-            <div class="col-md-6">
-                <label for="dob" class="form-label">Date of Birth:</label>
-                <input type="date" class="form-control" id="dob" name="dob" required>
-                <div class="invalid-feedback">Please select your date of birth.</div>
-            </div>
-            <div class="col-md-6">
-                <label for="gender" class="form-label">Gender:</label><br>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" id="male" name="gender" value="Male" required>
-                    <label class="form-check-label" for="male">Male</label>
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label for="first_name" class="form-label">First Name:</label>
+                        <input type="text" class="form-control" id="first_name" name="first_name" required>
+                        <div class="invalid-feedback">Please provide your first name.</div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="last_name" class="form-label">Last Name:</label>
+                        <input type="text" class="form-control" id="last_name" name="last_name" required>
+                        <div class="invalid-feedback">Please provide your last name.</div>
+                    </div>
                 </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" id="female" name="gender" value="Female" required>
-                    <label class="form-check-label" for="female">Female</label>
+
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label for="dob" class="form-label">Date of Birth:</label>
+                        <input type="date" class="form-control" id="dob" name="dob" required>
+                        <div class="invalid-feedback">Please select your date of birth.</div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="gender" class="form-label">Gender:</label><br>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" id="male" name="gender" value="Male" required>
+                            <label class="form-check-label" for="male">Male</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" id="female" name="gender" value="Female" required>
+                            <label class="form-check-label" for="female">Female</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" id="other" name="gender" value="Other" required>
+                            <label class="form-check-label" for="other">Other</label>
+                        </div>
+                        <div class="invalid-feedback">Please select your gender.</div>
+                    </div>
                 </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" id="other" name="gender" value="Other" required>
-                    <label class="form-check-label" for="other">Other</label>
+
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label for="nationality" class="form-label">Nationality:</label>
+                        <input type="text" class="form-control" id="nationality" name="nationality" required>
+                        <div class="invalid-feedback">Please provide your nationality.</div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="email" class="form-label">Email Address:</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                        <div class="invalid-feedback">Please provide a valid email address.</div>
+                    </div>
                 </div>
-                <div class="invalid-feedback">Please select your gender.</div>
-            </div>
+
+                <div class="mb-3">
+                    <label for="phone" class="form-label">Phone Number:</label>
+                    <input type="text" class="form-control" id="phone" name="phone" required>
+                    <div class="invalid-feedback">Please provide your phone number.</div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="address" class="form-label">Address:</label>
+                    <input type="text" class="form-control" id="address" name="address" placeholder="Street" required>
+                    <div class="invalid-feedback">Please provide your address.</div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col-md-4">
+                        <label for="city" class="form-label">City:</label>
+                        <input type="text" class="form-control" id="city" name="city" required>
+                        <div class="invalid-feedback">Please provide your city.</div>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="state" class="form-label">State/Province:</label>
+                        <input type="text" class="form-control" id="state" name="state" required>
+                        <div class="invalid-feedback">Please provide your state or province.</div>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="postal_code" class="form-label">Postal Code:</label>
+                        <input type="text" class="form-control" id="postal_code" name="postal_code" required>
+                        <div class="invalid-feedback">Please provide your postal code.</div>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="country" class="form-label">Country:</label>
+                    <input type="text" class="form-control" id="country" name="country" required>
+                    <div class="invalid-feedback">Please provide your country.</div>
+                </div>
+
+                <!-- Profile Picture -->
+                <div class="section-title mb-3">Profile Picture</div>
+
+                <div class="mb-3">
+                    <label for="profile_picture" class="form-label">Upload Profile Picture:</label>
+                    <input type="file" class="form-control" id="profile_picture" name="profile_picture" accept="image/*" required>
+                    <div class="invalid-feedback">Please upload a profile picture.</div>
+                </div>
+
+                <!-- Parent/Guardian Information -->
+                <div class="section-title mb-3">Parent/Guardian Information</div>
+
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label for="parent_name" class="form-label">Parent/Guardian Name:</label>
+                        <input type="text" class="form-control" id="parent_name" name="parent_name">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="parent_phone" class="form-label">Parent/Guardian Phone Number:</label>
+                        <input type="text" class="form-control" id="parent_phone" name="parent_phone">
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="parent_email" class="form-label">Parent/Guardian Email Address:</label>
+                    <input type="email" class="form-control" id="parent_email" name="parent_email">
+                </div>
+
+                <!-- Declarations and Consent -->
+                <div class="section-title mb-3">Declaration and Consent</div>
+
+                <div class="form-check mb-3">
+                    <input class="form-check-input" type="checkbox" name="declaration" id="declaration" required>
+                    <label class="form-check-label" for="declaration">
+                        I hereby declare that all the information provided is true and correct to the best of my knowledge.
+                    </label>
+                    <div class="invalid-feedback">You must agree to the declaration.</div>
+                </div>
+
+                <div class="form-check mb-3">
+                    <input class="form-check-input" type="checkbox" name="consent" id="consent" required>
+                    <label class="form-check-label" for="consent">
+                        I consent to the collection, storage, and use of my personal data for university purposes.
+                    </label>
+                    <div class="invalid-feedback">You must agree to the consent.</div>
+                </div>
+
+                <!-- Signature -->
+                <div class="mb-3">
+                    <label for="signature" class="form-label">Signature:</label>
+                    <input type="text" class="form-control" id="signature" name="signature" placeholder="Type your full name as signature" required>
+                    <div class="invalid-feedback">Please provide your signature.</div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="date" class="form-label">Date:</label>
+                    <input type="date" class="form-control" id="date" name="date" required>
+                    <div class="invalid-feedback">Please select the date.</div>
+                </div>
+                <div class="btnSubmit">
+                    <button type="submit" class="btn btn-success" onclick="submitForm">Submit Registration</button>
+                </div>
+                <div class="mt-4">
+                    <p>"Once you've completed the registration process, you'll soon receive an email with your username, password, and the link to login our Learning Management System (LMS). Get ready to dive into your learning journey with us!"</p>
+                </div>
+            </form>
         </div>
-
-        <div class="row mb-3">
-            <div class="col-md-6">
-                <label for="nationality" class="form-label">Nationality:</label>
-                <input type="text" class="form-control" id="nationality" name="nationality" required>
-                <div class="invalid-feedback">Please provide your nationality.</div>
-            </div>
-            <div class="col-md-6">
-                <label for="email" class="form-label">Email Address:</label>
-                <input type="email" class="form-control" id="email" name="email" required>
-                <div class="invalid-feedback">Please provide a valid email address.</div>
-            </div>
-        </div>
-
-        <div class="mb-3">
-            <label for="phone" class="form-label">Phone Number:</label>
-            <input type="text" class="form-control" id="phone" name="phone" required>
-            <div class="invalid-feedback">Please provide your phone number.</div>
-        </div>
-
-        <div class="mb-3">
-            <label for="address" class="form-label">Address:</label>
-            <input type="text" class="form-control" id="address" name="address" placeholder="Street" required>
-            <div class="invalid-feedback">Please provide your address.</div>
-        </div>
-
-        <div class="row mb-3">
-            <div class="col-md-4">
-                <label for="city" class="form-label">City:</label>
-                <input type="text" class="form-control" id="city" name="city" required>
-                <div class="invalid-feedback">Please provide your city.</div>
-            </div>
-            <div class="col-md-4">
-                <label for="state" class="form-label">State/Province:</label>
-                <input type="text" class="form-control" id="state" name="state" required>
-                <div class="invalid-feedback">Please provide your state or province.</div>
-            </div>
-            <div class="col-md-4">
-                <label for="postal_code" class="form-label">Postal Code:</label>
-                <input type="text" class="form-control" id="postal_code" name="postal_code" required>
-                <div class="invalid-feedback">Please provide your postal code.</div>
-            </div>
-        </div>
-
-        <div class="mb-3">
-            <label for="country" class="form-label">Country:</label>
-            <input type="text" class="form-control" id="country" name="country" required>
-            <div class="invalid-feedback">Please provide your country.</div>
-        </div>
-
-        <!-- Profile Picture -->
-        <div class="section-title mb-3">Profile Picture</div>
-
-        <div class="mb-3">
-            <label for="profile_picture" class="form-label">Upload Profile Picture:</label>
-            <input type="file" class="form-control" id="profile_picture" name="profile_picture" accept="image/*" required>
-            <div class="invalid-feedback">Please upload a profile picture.</div>
-        </div>
-
-        <!-- Parent/Guardian Information -->
-        <div class="section-title mb-3">Parent/Guardian Information</div>
-
-        <div class="row mb-3">
-            <div class="col-md-6">
-                <label for="parent_name" class="form-label">Parent/Guardian Name:</label>
-                <input type="text" class="form-control" id="parent_name" name="parent_name">
-            </div>
-            <div class="col-md-6">
-                <label for="parent_phone" class="form-label">Parent/Guardian Phone Number:</label>
-                <input type="text" class="form-control" id="parent_phone" name="parent_phone">
-            </div>
-        </div>
-
-        <div class="mb-3">
-            <label for="parent_email" class="form-label">Parent/Guardian Email Address:</label>
-            <input type="email" class="form-control" id="parent_email" name="parent_email">
-        </div>
-
-        <!-- Declarations and Consent -->
-        <div class="section-title mb-3">Declaration and Consent</div>
-
-        <div class="form-check mb-3">
-            <input class="form-check-input" type="checkbox" name="declaration" id="declaration" required>
-            <label class="form-check-label" for="declaration">
-                I hereby declare that all the information provided is true and correct to the best of my knowledge.
-            </label>
-            <div class="invalid-feedback">You must agree to the declaration.</div>
-        </div>
-
-        <div class="form-check mb-3">
-            <input class="form-check-input" type="checkbox" name="consent" id="consent" required>
-            <label class="form-check-label" for="consent">
-                I consent to the collection, storage, and use of my personal data for university purposes.
-            </label>
-            <div class="invalid-feedback">You must agree to the consent.</div>
-        </div>
-
-        <!-- Signature -->
-        <div class="mb-3">
-            <label for="signature" class="form-label">Signature:</label>
-            <input type="text" class="form-control" id="signature" name="signature" placeholder="Type your full name as signature" required>
-            <div class="invalid-feedback">Please provide your signature.</div>
-        </div>
-
-        <div class="mb-3">
-            <label for="date" class="form-label">Date:</label>
-            <input type="date" class="form-control" id="date" name="date" required>
-            <div class="invalid-feedback">Please select the date.</div>
-        </div>
-
-        <button type="submit" class="btn btn-primary">Submit Registration</button>
-    </form>
+    </div>
 
     <!-- Responsive Footer -->
     <div class="container p-0">
-        <footer class="text-light py-4 bg-secondary">
+        <footer class="text-light bg-secondary">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-4 mb-1">
+                    <div class="col-md-8 mb-1 mt-3">
                         <div class="d-flex">
-                            <div class="m-2"><img src="img/Uni logo.jpg" width="60" style="border-radius: 50%;" alt=""></div>
+                            <div class="m-2 me-4"><img src="img/Uni logo.jpg" width="80" style="border-radius: 50%;" alt=""></div>
                             <div>
-                                <h5>University of Engineering Technology</h5>
-                                <p class="text-dark" style="font-size: small;">Empowering future engineers with world-class education and facilities. Explore your potential with us!</p>
+                                <h5 class="text-start">University of Engineering Technology</h5>
+                                <p class="text-dark text-start" style="font-size: small;">Empowering future engineers with world-class education and facilities. <br> Explore your potential with us!</p>
                             </div>
                         </div>
-                        <div class="text-center">
-                            <img src="img/Web Developer Best Website Winner.png" width="250" alt="">
-                        </div>
                     </div> 
-                    <div class="col-md-4 mb-1 text-start">
-                        <h5>Quick Links</h5>
-                        <hr>
-                        <ul class="list-unstyled text-start">
-                            <li><a href="#" class="nav-link m-2">Home</a></li>
-                            <li><a href="#courses" class="nav-link m-2">Courses</a></li>
-                            <li><a href="#facilities" class="nav-link m-2">Facilities</a></li>
-                            <li><a href="#about" class="nav-link m-2">About</a></li>
-                            <li><a href="#contact" class="nav-link m-2">Contact</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-4 mb-1 text-start">
+                    <div class="col-md-4 mb-0 text-start">
                         <h5>Contact Info</h5>
                         <hr>
                         <ul class="list-unstyled text-start text-dark">
-                            <li class="m-2">Email: info@uet.com</li>
-                            <li class="m-2">Phone: +123 456 7890</li>
-                            <li class="m-2">Address: 123 University Ave, Tech City</li>
+                            <li class="m-1">Email: info@uet.com</li>
+                            <li class="m-1">Phone: +123 456 7890</li>
+                            <li class="m-1">Address: 123 University Ave, Tech City</li>
                         </ul>
                         <div class="mt-2 d-flex m-2">
                             <div class="text-light me-3">
@@ -246,7 +248,8 @@
     </div>
 
 
-    <script src="scripts.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scriptsRegister.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
 </body>
 </html>
