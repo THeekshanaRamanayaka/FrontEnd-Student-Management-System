@@ -3,7 +3,7 @@
 }
 
 .hero-div {
-    background-image: url(/img/Untitled\ design.png);
+    background-image: url(../img/Untitled\ design.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -19,7 +19,7 @@
 }
 
 .about {
-    background-image: url(./img/Graduate\ Degree\ Cap\ on\ Books.jpg);
+    background-image: url(../img/Graduate\ Degree\ Cap\ on\ Books.jpg);
     background-size: cover;
 }
 
