@@ -1,0 +1,38 @@
+.img-fluid {
+    height: 100%;
+    object-fit: cover;
+}
+
+.container-fluid {
+    background-color: #f8f9fa;
+}
+
+h2 {
+    font-weight: 600;
+    color: #0056b3;
+}
+
+.form-label {
+    font-weight: 500;
+    color: #333;
+}
+
+.btn-primary {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.btn-primary:hover {
+    background-color: #004494;
+    border-color: #004494;
+}
+
+.text-decoration-none:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+}
