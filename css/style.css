@@ -19,7 +19,7 @@
 }
 
 .about {
-    background-image: url(/img/Graduate\ Degree\ Cap\ on\ Books.jpg);
+    background-image: url(./img/Graduate\ Degree\ Cap\ on\ Books.jpg);
     background-size: cover;
 }
 
@@ -32,7 +32,7 @@
 }
 
 .contactUs {
-    background-image: url(/img/Phone\ Blue\ Contact\ Us.jpg);
+    background-image: url(../img/Phone\ Blue\ Contact\ Us.jpg);
     background-size: cover;
     background-position: center;
 }
