@@ -4,7 +4,7 @@ body {
 }
 
 .main {
-    background-image: url(/img/Desk\ with\ objects.jpg);
+    background-image: url("../img/Desk\ with\ objects.jpg");
     background-size: cover;
     background-position: center;
 }
